@@ -1,5 +1,12 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+  "exclude": ["dist"],
+
+  "compilarOptions": {
+    "baseurl": ".",
+    "paths": {
+      "@utils/*": ["./src/utils/*"]
+    }
+  }
 }
