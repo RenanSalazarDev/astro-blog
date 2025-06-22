@@ -9,11 +9,6 @@ export default defineConfig({
   vite: {
       plugins: [tailwindcss()],
   },
-
-  
-  
-  
-
   integrations: [mdx()],
   site: 'https://renan-astro-blog.netlify.app'
 });
